@@ -10,9 +10,14 @@ import UIKit
 extension UIColor {
     public convenience init(hexString: String) {
         let r, g, b, a: CGFloat
-
+        
         let scanner = Scanner(string: hexString)
-        _ = scanner.scanCharacters(from: CharacterSet(charactersIn: "#"))
+        if #available(iOS 13.0, *) {
+            _ = scanner.scanCharacters(from: CharacterSet(charactersIn: "#"))
+        } else if hexString.hasPrefix("#") {
+            scanner.scanLocation = 1
+        }
+        
         var hexNumber: UInt64 = 0
         scanner.scanHexInt64(&hexNumber)
         if hexString.length > 7 {
