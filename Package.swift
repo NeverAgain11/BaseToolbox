@@ -9,21 +9,21 @@ let package = Package(
   products: [
     .library(
       name: "BaseToolbox",
-      targets: ["BaseToolbox", "BaseToolboxUIKit", "BaseToolboxCoreGraphics", "BaseToolboxFoundation"]),
+      targets: ["BaseToolbox"]),
   ],
   dependencies: [],
   targets: [
     .target(
       name: "BaseToolbox",
-      dependencies: ["BaseToolboxUIKit", "BaseToolboxCoreGraphics", "BaseToolboxFoundation"]),
-    .target(
-      name: "BaseToolboxUIKit",
-      dependencies: ["BaseToolboxCoreGraphics"]),
-    .target(
-      name: "BaseToolboxCoreGraphics",
-      dependencies: ["BaseToolboxFoundation"]),
-    .target(
-      name: "BaseToolboxFoundation",
+//      dependencies: ["BaseToolboxUIKit", "BaseToolboxCoreGraphics", "BaseToolboxFoundation"]),
+//    .target(
+//      name: "BaseToolboxUIKit",
+//      dependencies: ["BaseToolboxCoreGraphics"]),
+//    .target(
+//      name: "BaseToolboxCoreGraphics",
+//      dependencies: ["BaseToolboxFoundation"]),
+//    .target(
+//      name: "BaseToolboxFoundation",
       dependencies: []),
   ]
 )
