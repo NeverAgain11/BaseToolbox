@@ -1,6 +1,6 @@
 #  
-# pod trunk push BaseToolbox-flow.podspec --allow-warnings
-# Be sure to run `pod lib lint BaseToolbox-flow.podspec --allow-warnings' to ensure this is a
+# pod trunk push BaseToolbox.podspec --allow-warnings
+# Be sure to run `pod lib lint BaseToolbox.podspec --allow-warnings' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,10 +8,10 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'BaseToolbox-flow'
-  s.version          = '1.0.0'
+  s.name             = 'BaseToolbox'
+  s.version          = '1.0.1'
   s.summary          = 'BaseToolbox 小修改'
-  s.module_name = "BaseToolbox"
+  # s.module_name = "BaseToolbox"
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
