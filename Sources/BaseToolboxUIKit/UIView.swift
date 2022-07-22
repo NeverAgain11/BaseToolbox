@@ -8,10 +8,10 @@ extension UIView {
         static var hitTestSlop: Void?
     }
     
-    @objc open var cornerRadius: CGFloat {
-        get { layer.cornerRadius }
-        set { layer.cornerRadius = newValue }
-    }
+//    @objc open var cornerRadius: CGFloat {
+//        get { layer.cornerRadius }
+//        set { layer.cornerRadius = newValue }
+//    }
   
     @available(iOS 13.0, *)
     open var cornerCurve: CALayerCornerCurve {
