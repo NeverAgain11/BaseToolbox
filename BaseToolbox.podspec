@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaseToolbox'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'BaseToolbox 小修改'
   # s.module_name = "BaseToolbox"
 # This description is used to generate tags and improve search results.
