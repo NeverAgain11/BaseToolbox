@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 @resultBuilder
 public enum MenuElementsBuilder {
     public static func buildExpression(_ expression: UIMenuElement) -> [UIMenuElement] {
@@ -35,6 +36,7 @@ public enum MenuElementsBuilder {
     }
 }
 
+@available(iOS 13.0, *)
 public extension UIMenu {
     convenience init(
         title: String = "",
